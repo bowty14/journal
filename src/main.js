@@ -11,7 +11,7 @@ $(document).ready(function () {
     var title = $("#titleInput").val();
     var text = $("#journalTextInput").val();
     var newEntry = new Entry(title, text);
-    var wordCount = newEntry.numWords();
+    var wordCount = newEntry.numWords(text);
     var vowelCount = newEntry.numVowels();
     var consonantCount = newEntry.numConsonants();
     console.log(newEntry.getTeaser());
