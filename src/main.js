@@ -14,10 +14,11 @@ $(document).ready(function () {
     var wordCount = newEntry.numWords(text);
     var vowelCount = newEntry.numVowels();
     var consonantCount = newEntry.numConsonants();
-    console.log(newEntry.getTeaser());
+    var teaser = newEntry.getTeaser();
     $(".ttlWords").text(wordCount);
     $(".ttlVowels").text(vowelCount);
     $(".ttlConsonants").text(consonantCount);
+    $(".teaser").text(teaser);
     $(".output").show();
   });
 });

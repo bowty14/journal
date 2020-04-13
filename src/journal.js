@@ -21,18 +21,14 @@ Entry.prototype.numConsonants = function () {
 }
 
 Entry.prototype.getTeaser = function () {
-  /* var preview = this.text.substring(0, this.text.indexOf(" "));
-  return preview; */
   var sentenceSplit = this.text.replace(/([.?!])\s*(?=[A-Z])/g, "$1|").split("|")[0];
   var words = this.numWords(sentenceSplit);
   var firstEightWords = sentenceSplit.split(' ');
-
   if (words > 8) {
     return firstEightWords.slice(0, 8).join(" ");
   } else {
     return sentenceSplit;
   }
-
 }
 
 //var firstLine = theString.split('\n')[0];
