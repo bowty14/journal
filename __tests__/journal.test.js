@@ -22,4 +22,12 @@ describe('Entry', () => {
     var entry = new Entry("", vowels);
     expect(entry.numVowels()).toEqual(vowels === null ? 0 : vowels.length)
   })
-})   
+});
+
+describe('Entry', () => {
+  test('count how many consonants are in this.text', () => {
+    let consonants = "";
+    var entry = new Entry("", consonants);
+    expect(entry.numConsonants()).toEqual(consonants === null ? 0 : consonants.length)
+  })
+});
