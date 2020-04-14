@@ -22,4 +22,4 @@ describe('Entry', () => {
     var entry = new Entry("", vowels);
     expect(entry.numVowels()).toEqual(vowels === null ? 0 : vowels.length)
   })
-})
+})   
