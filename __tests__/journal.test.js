@@ -31,3 +31,11 @@ describe('Entry', () => {
     expect(entry.numConsonants()).toEqual(consonants === null ? 0 : consonants.length)
   })
 });
+
+describe('Entry', () => {
+  test('', () => {
+    let firstEightWords = "";
+    var entry = new Entry("", firstEightWords);
+    expect(entry.getTeaser()).toEqual(firstEightWords.slice(0, 8).join(" "))
+  })
+})
